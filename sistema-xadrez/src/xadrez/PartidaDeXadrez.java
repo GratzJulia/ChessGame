@@ -1,6 +1,5 @@
 package xadrez;
 
-import cam_tabuleiro.Posicao;
 import cam_tabuleiro.Tabuleiro;;
 
 public class PartidaDeXadrez {
@@ -24,38 +23,38 @@ public class PartidaDeXadrez {
 	}
 	
 	public void iniciarPartida() {
-		tabuleiro.colocaPeca(new Torre(tabuleiro, Cor.PRETO), new Posicao(0, 0));
-		tabuleiro.colocaPeca(new Torre(tabuleiro, Cor.PRETO), new Posicao(0, 7));
-		tabuleiro.colocaPeca(new King(tabuleiro, Cor.PRETO), new Posicao(0, 4));
-		tabuleiro.colocaPeca(new Queen(tabuleiro, Cor.PRETO), new Posicao(0, 3));
-		tabuleiro.colocaPeca(new Bispo(tabuleiro, Cor.PRETO), new Posicao(0, 1));
-		tabuleiro.colocaPeca(new Bispo(tabuleiro, Cor.PRETO), new Posicao(0, 6));
-		tabuleiro.colocaPeca(new Cavalo(tabuleiro, Cor.PRETO), new Posicao(0, 2));
-		tabuleiro.colocaPeca(new Cavalo(tabuleiro, Cor.PRETO), new Posicao(0, 5));
-		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.PRETO), new Posicao(1,0));
-		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.PRETO), new Posicao(1,1));
-		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.PRETO), new Posicao(1,2));
-		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.PRETO), new Posicao(1,3));
-		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.PRETO), new Posicao(1,4));
-		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.PRETO), new Posicao(1,5));
-		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.PRETO), new Posicao(1,6));
-		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.PRETO), new Posicao(1,7));
-		
-		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.BRANCO), new Posicao(6,7));		
-		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.BRANCO), new Posicao(6,6));		
-		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.BRANCO), new Posicao(6,5));
-		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.BRANCO), new Posicao(6,4));
-		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.BRANCO), new Posicao(6,3));
-		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.BRANCO), new Posicao(6,2));	
-		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.BRANCO), new Posicao(6,1));
-		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.BRANCO), new Posicao(6,0));
-		tabuleiro.colocaPeca(new Cavalo(tabuleiro, Cor.BRANCO), new Posicao(7, 5));
-		tabuleiro.colocaPeca(new Cavalo(tabuleiro, Cor.BRANCO), new Posicao(7, 2));
-		tabuleiro.colocaPeca(new Bispo(tabuleiro, Cor.BRANCO), new Posicao(7, 6));
-		tabuleiro.colocaPeca(new Bispo(tabuleiro, Cor.BRANCO), new Posicao(7, 1));
-		tabuleiro.colocaPeca(new Queen(tabuleiro, Cor.BRANCO), new Posicao(7, 3));
-		tabuleiro.colocaPeca(new King(tabuleiro, Cor.BRANCO), new Posicao(7, 4));
-		tabuleiro.colocaPeca(new Torre(tabuleiro, Cor.BRANCO), new Posicao(7, 0));
-		tabuleiro.colocaPeca(new Torre(tabuleiro, Cor.BRANCO), new Posicao(7, 7));
+		tabuleiro.colocaPeca(new Torre(tabuleiro, Cor.PRETO), new TabPosicao('A', 8).converteParaMatriz());
+		tabuleiro.colocaPeca(new Torre(tabuleiro, Cor.PRETO), new TabPosicao('H', 8).converteParaMatriz());
+		tabuleiro.colocaPeca(new King(tabuleiro, Cor.PRETO), new TabPosicao('E', 8).converteParaMatriz());;
+		tabuleiro.colocaPeca(new Queen(tabuleiro, Cor.PRETO), new TabPosicao('D', 8).converteParaMatriz());
+		tabuleiro.colocaPeca(new Bispo(tabuleiro, Cor.PRETO), new TabPosicao('B', 8).converteParaMatriz());
+		tabuleiro.colocaPeca(new Bispo(tabuleiro, Cor.PRETO), new TabPosicao('G', 8).converteParaMatriz());
+		tabuleiro.colocaPeca(new Cavalo(tabuleiro, Cor.PRETO), new TabPosicao('C', 8).converteParaMatriz());
+		tabuleiro.colocaPeca(new Cavalo(tabuleiro, Cor.PRETO), new TabPosicao('F', 8).converteParaMatriz());
+		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.PRETO), new TabPosicao('A', 7).converteParaMatriz());
+		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.PRETO), new TabPosicao('B', 7).converteParaMatriz());
+		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.PRETO), new TabPosicao('C', 7).converteParaMatriz());
+		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.PRETO), new TabPosicao('D', 7).converteParaMatriz());
+		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.PRETO), new TabPosicao('E', 7).converteParaMatriz());
+		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.PRETO), new TabPosicao('F', 7).converteParaMatriz());
+		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.PRETO), new TabPosicao('G', 7).converteParaMatriz());
+		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.PRETO), new TabPosicao('H', 7).converteParaMatriz());
+
+		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.BRANCO), new TabPosicao('A', 2).converteParaMatriz());		
+		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.BRANCO), new TabPosicao('B', 2).converteParaMatriz());		
+		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.BRANCO), new TabPosicao('C', 2).converteParaMatriz());
+		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.BRANCO), new TabPosicao('D', 2).converteParaMatriz());
+		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.BRANCO), new TabPosicao('E', 2).converteParaMatriz());
+		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.BRANCO), new TabPosicao('F', 2).converteParaMatriz());	
+		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.BRANCO), new TabPosicao('G', 2).converteParaMatriz());
+		tabuleiro.colocaPeca(new Peao(tabuleiro,  Cor.BRANCO), new TabPosicao('H', 2).converteParaMatriz());
+		tabuleiro.colocaPeca(new Cavalo(tabuleiro, Cor.BRANCO), new TabPosicao('C', 1).converteParaMatriz());
+		tabuleiro.colocaPeca(new Cavalo(tabuleiro, Cor.BRANCO), new TabPosicao('F', 1).converteParaMatriz());
+		tabuleiro.colocaPeca(new Bispo(tabuleiro, Cor.BRANCO), new TabPosicao('G', 1).converteParaMatriz());
+		tabuleiro.colocaPeca(new Bispo(tabuleiro, Cor.BRANCO), new TabPosicao('B', 1).converteParaMatriz());
+		tabuleiro.colocaPeca(new Queen(tabuleiro, Cor.BRANCO), new TabPosicao('D', 1).converteParaMatriz());
+		tabuleiro.colocaPeca(new King(tabuleiro, Cor.BRANCO),  new TabPosicao('E', 1).converteParaMatriz());
+		tabuleiro.colocaPeca(new Torre(tabuleiro, Cor.BRANCO), new TabPosicao('A', 1).converteParaMatriz());
+		tabuleiro.colocaPeca(new Torre(tabuleiro, Cor.BRANCO), new TabPosicao('H', 1).converteParaMatriz());
 	}
 }
