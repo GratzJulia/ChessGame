@@ -14,4 +14,9 @@ public class King extends PecaDeXadrez {
 		return "K";
 	}
 
+	@Override
+	public boolean[][] movimentosPossiveis() {
+		
+		return null;
+	}
 }

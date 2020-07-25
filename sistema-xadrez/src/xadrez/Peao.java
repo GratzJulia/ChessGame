@@ -12,4 +12,10 @@ public class Peao extends PecaDeXadrez {
 	public String toString() {
 		return "P";
 	}
+	
+	@Override
+	public boolean[][] movimentosPossiveis() {
+		
+		return null;
+	}
 }

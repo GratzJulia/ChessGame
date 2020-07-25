@@ -13,4 +13,10 @@ public class Cavalo extends PecaDeXadrez {
 		// identificador da peça q será apresentado no tabuleiro
 		return "C";
 	}
+	
+	@Override
+	public boolean[][] movimentosPossiveis() {
+		
+		return null;
+	}
 }

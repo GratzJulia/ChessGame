@@ -13,4 +13,10 @@ public class Bispo extends PecaDeXadrez {
 		// identificador da peça q será apresentado no tabuleiro
 		return "B";
 	}
+	
+	@Override
+	public boolean[][] movimentosPossiveis() {
+		
+		return null;
+	}
 }

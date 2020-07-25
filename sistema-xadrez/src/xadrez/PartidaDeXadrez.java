@@ -31,6 +31,12 @@ public class PartidaDeXadrez {
 		if(!tabuleiro.temUmaPeca(origem)) {
 			throw new JogoException("Não há peça nesta posição de origem!");
 		}
+		if(!tabuleiro.peca(origem).temMovimentosPossiveis()) {
+			throw new JogoException("Não há movimentos possíveis para esta peça!");
+		}
+		if(!tabuleiro.peca(origem).podeMoverPara(destino)) {
+			throw new JogoException("A peça escolhida não pode se mover para a posição de destino!");
+		}
 		Peca capturada = movePeca(origem, destino);
 		return (PecaDeXadrez) capturada;
 	}

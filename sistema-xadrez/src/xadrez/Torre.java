@@ -13,4 +13,10 @@ public class Torre extends PecaDeXadrez {
 		// identificador da peça q será apresentado no tabuleiro
 		return "T";
 	}
+
+	@Override
+	public boolean[][] movimentosPossiveis() {
+		
+		return null;
+	}
 }

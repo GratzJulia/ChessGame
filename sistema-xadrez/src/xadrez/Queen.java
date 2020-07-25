@@ -13,4 +13,10 @@ public class Queen extends PecaDeXadrez {
 		// identificador da peça q será apresentado no tabuleiro
 		return "Q";
 	}
+	
+	@Override
+	public boolean[][] movimentosPossiveis() {
+		
+		return null;
+	}
 }
